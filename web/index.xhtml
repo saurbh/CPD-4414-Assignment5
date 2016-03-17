@@ -9,6 +9,7 @@
     <h:body>
         <h:form>
             <h:dataTable value="#{posts.posts}" var="post">
+                <h:column>1</h:column>
                 <h:column>
                     <h:commandLink action="#{posts.viewPost(post)}">#{post.title}</h:commandLink>
                 </h:column>
@@ -19,12 +20,12 @@
                     #{post.createdTime.toLocaleString()}
                 </h:column>
             </h:dataTable>
-<!--            <c:if test="#{login.loggedIn}">
+            <c:if test="#{login.loggedIn}">
                 <h:commandButton value="Add New" action="#{posts.addPost()}" />
             </c:if>
             <c:if test="#{!login.loggedIn}">
                 <h:commandButton value="Login" action="login" />
-            </c:if>-->
+            </c:if>
         </h:form>
     </h:body>
 </html>

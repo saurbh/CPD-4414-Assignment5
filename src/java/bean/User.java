@@ -5,11 +5,13 @@
  */
 package bean;
 
+import java.io.Serializable;
+
 /**
  *
  * @author c0666985
  */
-public class User {
+public class User implements Serializable {
     private int id;
     private String username;
     private String passhash;

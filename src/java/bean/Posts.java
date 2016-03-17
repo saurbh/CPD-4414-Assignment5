@@ -39,7 +39,7 @@ public class Posts {
         this.currentPost = currentPost;
     }
     
-    public void Posts(){
+    public Posts(){
         currentPost  = new Post( -1, -1, "", null, "");
         getPostsfromDB();
     }

@@ -5,6 +5,7 @@
  */
 package bean;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -12,7 +13,7 @@ import java.util.Date;
  * @author c0666985
  */
 
-public class Post {
+public class Post implements Serializable {
     private int id;
     private int userId;
     private String title;
